@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: cafestatic
-        image: prashasthnaik/staticweb:latest
+        image: karthikk007/staticweb:latest
         ports:
         - containerPort: 80
