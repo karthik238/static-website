@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cafestatic
+  name: mycafeapp
   labels:
-    app: cafestatic
+    app: mycafeapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cafestatic
+      app: mycafeapp
   template:
     metadata:
       labels:
-        app: cafestatic
+        app: mycafeapp
     spec:
       containers:
-      - name: cafestatic
-        image: karthikk007/staticweb:latest
+      - name: mycafeapp
+        image: karthikk007/cafeservice:v2
         ports:
         - containerPort: 80
